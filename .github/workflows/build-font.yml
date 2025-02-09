@@ -29,7 +29,7 @@ jobs:
         sudo apt-get install -y ttfautohint
       
     - name: Build font
-      run: npm run build -- ttf::iosevka-custom
+      run: npm run build -- ttf::NotOne
       
     - name: Upload artifacts
       uses: actions/upload-artifact@v4
