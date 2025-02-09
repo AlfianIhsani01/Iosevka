@@ -36,6 +36,6 @@ jobs:
     - name: Upload artifacts
       uses: actions/upload-artifact@v4
       with:
-        name: iosevka-custom-fonts
-        path: Iosevka/dist/NotOne/ttf
+        name: NotOne-fonts
+        path: dist/NotOne
         retention-days: 7
