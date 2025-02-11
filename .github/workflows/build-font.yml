@@ -26,16 +26,42 @@ jobs:
     - name: Install required packages
       run: |
         sudo apt-get update
-        sudo apt-get install -y ttfautohint
-      
+        sudo apt-get install -y ttfautohint fontforge python3-fontforge
+
     - name: Build font
       run: |
         npm install
-        npm run build -- ttf::NotOne
+        npm run build -- ttf::SpacesOne:TTF Only
+
+    - name: Download font patcher
+      run: |
+        curl https://github.com/ryanoasis/nerd-fonts/releases/latest/download/FontPatcher.zip
+        mkdir nerd-fonts
+        unzip FontPatcher.zip -d nerd-font
+
+    - name: Patch fonts with Nerd Fonts
+      run: |
+        mkdir -p patched-fonts
+        for font in dist/SpacesOne/*.ttf; do
+          echo "Patching $font"
+          fontforge -script ./nerd-fonts/font-patcher \
+            --complete \
+            --careful \
+            --progressbars \
+            --outputdir "patched-fonts" \
+            "$font"
+        done
       
-    - name: Upload artifacts
+    - name: Upload original fonts
       uses: actions/upload-artifact@v4
       with:
-        name: NotOne-fonts
-        path: dist/NotOne
+        name: SpacesOne-fonts-original
+        path: dist/SpacesOne
+        retention-days: 7
+
+    - name: Upload patched fonts
+      uses: actions/upload-artifact@v4
+      with:
+        name: SpacesOne-fonts-nerd
+        path: patched-fonts
         retention-days: 7
