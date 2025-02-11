@@ -35,7 +35,7 @@ jobs:
 
     - name: Download font patcher
       run: |
-        curl https://github.com/ryanoasis/nerd-fonts/releases/latest/download/FontPatcher.zip
+        curl -O https://github.com/ryanoasis/nerd-fonts/releases/latest/download/FontPatcher.zip
         mkdir nerd-fonts
         unzip FontPatcher.zip -d nerd-font
 
