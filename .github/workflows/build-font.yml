@@ -31,7 +31,7 @@ jobs:
     - name: Build font
       run: |
         npm install
-        npm run build -- ttf::SpacesOne:TTF Only
+        npm run build -- ttf::SpacesOne
 
     - name: Download font patcher
       run: |
