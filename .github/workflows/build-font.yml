@@ -41,7 +41,7 @@ jobs:
     - name: Patch fonts with Nerd Fonts
       run: |
         mkdir -p patched-fonts
-        for font in dist/SpacesOne/*.ttf; do
+        for font in dist/SpacesOne/TTF/*.ttf; do
           echo "Patching $font"
           fontforge -script ./nerd-fonts/font-patcher \
             --complete \
