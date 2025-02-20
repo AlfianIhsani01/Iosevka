@@ -25,9 +25,9 @@ jobs:
         
     - name: Install required packages
       run: |
-        sudo apt-get update
-        sudo apt-get install -y ttfautohint fontforge python3-fontforge
-        sudo apt_get upgrade
+        sudo apt update
+        sudo apt install -y ttfautohint fontforge python3-fontforge
+        sudo apt upgrade
 
     - name: Build font
       run: |
