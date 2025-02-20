@@ -52,14 +52,14 @@ h = "straight-top-left-serifed"
 i = "hooky"
 j = "flat-hook-serifed"
 k = "symmetric-connected-top-left-serifed"
-l = "serifed-semi-tailed"
-m = "earless-single-arch-short-leg-bottom-right-serifed"
+l = "serifed-flat-tailed"
+m = "earless-corner-double-arch-short-leg-bottom-right-serifed"
 n = "earless-corner-straight-motion-serifed"
 p = "earless-corner-serifless"
 q = "earless-corner-tailed-serifless"
 r = "earless-corner-serifless"
 s = "unilateral-inward-serifed"
-t = "flat-hook-short-neck2"
+t = "flat-hook"
 u = "toothless-corner-motion-serifed"
 v = "straight-motion-serifed"
 w = "straight-vertical-sides-motion-serifed"
@@ -129,7 +129,7 @@ brace = "straight"
 guillemet = "straight"
 number-sign = "upright"
 ampersand = "upper-open"
-at = "threefold-tall"
+at = "fourfold"
 dollar = "slanted-open"
 cent = "slanted-open-cap"
 percent = "rings-segmented-slash"
@@ -147,35 +147,35 @@ lig-plus-chain = "without-notch"
 lig-double-arrow-bar = "without-notch"
 lig-single-arrow-bar = "without-notch"
 
+[buildPlans.SpacesOne.weights.ExtraLight]
+shape = 200
+menu = 200
+css = 200
+
 [buildPlans.SpacesOne.weights.Regular]
 shape = 400
 menu = 400
 css = 400
 
-[buildPlans.SpacesOne.weights.Medium]
-shape = 500
-menu = 500
-css = 500
-
-[buildPlans.SpacesOne.weights.SemiBold]
-shape = 600
-menu = 600
-css = 600
+[buildPlans.SpacesOne.weights.Bold]
+shape = 700
+menu = 700
+css = 700
 
 [buildPlans.SpacesOne.widths.Normal]
-shape = 600
+shape = 500
 menu = 5
 css = "normal"
 
-[buildPlans.SpacesOne.widths.SemiCondensed]
-shape = 548
-menu = 4
-css = "semi-condensed"
+[buildPlans.SpacesOne.widths.Extended]
+shape = 600
+menu = 7
+css = "expanded"
 
-[buildPlans.SpacesOne.widths.SemiExtended]
-shape = 658
-menu = 6
-css = "semi-expanded"
+[buildPlans.SpacesOne.widths.Condensed]
+shape = 416
+menu = 3
+css = "condensed"
 
 [buildPlans.SpacesOne.slopes.Upright]
 angle = 0
