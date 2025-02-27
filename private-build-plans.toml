@@ -1,4 +1,4 @@
-[buildPlans.Dyve]
+]buildPlans.Dyve]
 family = "Dyve"
 spacing = "term"
 serifs = "sans"
@@ -6,7 +6,7 @@ noCvSs = true
 exportGlyphNames = false
 
 [buildPlans.Dyve.variants.design]
-one = "no-base"
+one = "base"
 two = "curly-neck-serifed"
 three = "flat-top-serifed"
 four = "semi-open-serifless"
@@ -31,10 +31,10 @@ capital-l = "motion-serifed"
 capital-m = "hanging-motion-serifed"
 capital-n = "asymmetric-motion-serifed"
 capital-p = "closed-motion-serifed"
-capital-q = "crossing"
+capital-q = "curly-tailed"
 capital-r = "straight-top-left-serifed"
 capital-s = "unilateral-inward-serifed"
-capital-t = "motion-serifed"
+capital-t = "serifless"
 capital-u = "toothless-corner-unilateral-motion-serifed"
 capital-v = "straight-motion-serifed"
 capital-w = "straight-vertical-sides-motion-serifed"
@@ -43,7 +43,7 @@ capital-y = "straight-motion-serifed"
 capital-z = "straight-top-serifed"
 a = "double-storey-toothless-corner"
 b = "toothless-corner-serifless"
-c = "unilateral-inward-serifed"
+c = "bilateral-inward-serifed"
 d = "toothless-corner-serifless"
 e = "flat-crossbar"
 f = "flat-hook-serifless-crossbar-at-x-height"
@@ -65,7 +65,7 @@ v = "straight-serifless"
 w = "straight-vertical-sides-serifless"
 x = "straight-serifless"
 y = "straight-serifless"
-z = "straight-top-serifed"
+z = "straight-serifless"
 capital-eszet = "corner-bottom-serifed"
 long-s = "flat-hook-tailed-middle-serifed"
 eszet = "sulzbacher-bottom-serifed"
@@ -166,17 +166,17 @@ menu = 700
 css = 700
 
 [buildPlans.Dyve.widths.Normal]
-shape = 500
+shape = 600
 menu = 5
 css = "normal"
 
 [buildPlans.Dyve.widths.SemiCondensed]
-shape = 456
+shape = 548
 menu = 4
 css = "semi-condensed"
 
 [buildPlans.Dyve.widths.SemiExtended]
-shape = 548
+shape = 658
 menu = 6
 css = "semi-expanded"
 
