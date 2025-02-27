@@ -32,7 +32,7 @@ jobs:
     - name: Build font
       run: |
         npm install
-        npm run build -- ttf::SpacesOne
+        npm run build -- ttf::Dyve
 
     - name: Download font patcher
       run: |
@@ -55,13 +55,13 @@ jobs:
     - name: Upload original fonts
       uses: actions/upload-artifact@v4
       with:
-        name: SpacesOne-fonts-original
-        path: dist/SpacesOne
+        name: Dyve-fonts-original
+        path: dist/Dyve
         retention-days: 7
 
     - name: Upload patched fonts
       uses: actions/upload-artifact@v4
       with:
-        name: SpacesOne-fonts-nerd
+        name: Dyve-fonts-nerd
         path: patched-fonts
         retention-days: 7
