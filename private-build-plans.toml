@@ -41,7 +41,7 @@ capital-w = "straight-vertical-sides-motion-serifed"
 capital-x = "straight-unilateral-motion-serifed"
 capital-y = "straight-motion-serifed"
 capital-z = "straight-top-serifed"
-a = "double-storey-hook-inward-serifed-toothless-corner"
+a = "double-storey-toothless-corner"
 b = "toothless-corner-serifless"
 c = "unilateral-inward-serifed"
 d = "toothless-corner-serifless"
@@ -52,14 +52,14 @@ h = "straight-serifless"
 i = "hooky"
 j = "flat-hook-serifed"
 k = "symmetric-connected-serifless"
-l = "hooky"
+l = "serifed-flat-tailed"
 m = "earless-single-arch-short-leg-serifless"
 n = "earless-corner-straight-serifless"
 p = "earless-corner-serifless"
-q = "earless-corner-straight-serifless"
+q = "earless-corner-tailed-serifless"
 r = "earless-corner-serifless"
 s = "unilateral-inward-serifed"
-t = "flat-hook"
+t = "flat-hook-short-neck"
 u = "toothless-corner-serifless"
 v = "straight-serifless"
 w = "straight-vertical-sides-serifless"
@@ -133,8 +133,8 @@ at = "fourfold"
 dollar = "slanted-open"
 cent = "slanted-open-cap"
 percent = "rings-continuous-slash-also-connected"
-bar = "natural-slope"
-question = "corner-flat-hooked"
+bar = "force-upright"
+question = "corner"
 pilcrow = "high"
 partial-derivative = "straight-bar"
 micro-sign = "toothless-corner-motion-serifed"
@@ -146,6 +146,9 @@ lig-hyphen-chain = "without-notch"
 lig-plus-chain = "without-notch"
 lig-double-arrow-bar = "without-notch"
 lig-single-arrow-bar = "without-notch"
+
+  [buildPlans.Dyve.ligations]
+  inherits = "dlig"
 
 [buildPlans.Dyve.weights.Light]
 shape = 300
@@ -163,17 +166,17 @@ menu = 700
 css = 700
 
 [buildPlans.Dyve.widths.Normal]
-shape = 600
+shape = 500
 menu = 5
 css = "normal"
 
 [buildPlans.Dyve.widths.SemiCondensed]
-shape = 548
+shape = 456
 menu = 4
 css = "semi-condensed"
 
 [buildPlans.Dyve.widths.SemiExtended]
-shape = 658
+shape = 548
 menu = 6
 css = "semi-expanded"
 
